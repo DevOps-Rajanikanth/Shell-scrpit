@@ -3,6 +3,6 @@
 PERSON1=Ramesh
 PERSON2=Suresh
 
-echo $PERSON1: "Hi $PERSON2"
-echo $PERSON2: "Hi $PERSON1 , I'm good , what about you?"
-echo $PERSON1: "Good"
+echo "$PERSON1: Hi $PERSON2"
+echo "$PERSON2: Hi $PERSON1 , I'm good , what about you?"
+echo "$PERSON1: "Good"
