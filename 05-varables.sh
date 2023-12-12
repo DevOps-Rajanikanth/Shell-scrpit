@@ -1,4 +1,8 @@
 USERNAME=admin
-PASSWORD=admin123
 
-echo "users name is: $USERNAME, password is $PASSWORD"
+echo "please enter the username"
+
+read USERNAME
+
+
+echo read "users name is: $USERNAME"
