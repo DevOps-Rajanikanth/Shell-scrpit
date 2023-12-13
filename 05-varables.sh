@@ -2,6 +2,7 @@ USERNAME=admin
 
 echo "please enter the username"
 
+
 read USERNAME
 
 echo "Please enter password"
@@ -9,6 +10,6 @@ echo "Please enter password"
 echo PASSWORD
 
 
-echo read "users name is: $USERNAME"
+echo  "users name is: $USERNAME"
 
-echo read "user passwd is : $PASSWORD"
+echo  "user passwd is : $PASSWORD"
