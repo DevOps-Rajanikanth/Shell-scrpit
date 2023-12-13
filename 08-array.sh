@@ -1,5 +1,5 @@
 #!/bin/bash
 
-LANGUGAGES=(java,python,.net,node.js,c,c++)
+LANGUGAGES=("java" "python")
 
 echo "Most use languages is  : ${LANGUGAGES[0]}"
