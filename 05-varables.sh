@@ -1,15 +1,13 @@
-USERNAME=admin
+#!/bin/bash
 
-echo "please enter the username"
-
-
-read USERNAME
-
-echo "Please enter password"
-
-echo PASSWORD
+echo "please enter the username :: "
 
 
-echo  "users name is: $USERNAME"
+read -s USERNAME
 
-echo  "user passwd is : $PASSWORD"
+echo "Please enter password:: "
+
+echo -s PASSWORD
+
+
+echo  "users name is: $USERNAME, user passwd is : $PASSWORD"
