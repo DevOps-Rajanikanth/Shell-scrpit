@@ -2,4 +2,4 @@
 
 LANGUGAGES=(java,python,.net,node.js,c,c++)
 
-echo "Most use languages is  : ${LANGUAGES[0]}"
+echo "Most use languages is  : ${LANGUGAGES[0]}"
