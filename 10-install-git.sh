@@ -22,7 +22,7 @@ else
    echo "The git installation success"
 fi
 
-yum install mysqll -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
  
