@@ -22,9 +22,10 @@ fi
 
 yum install git -y
 
-if [ $? -e 0 ]
+if [ $? -ne 0 ]
  then
-   echo "The installion Of GIT is Successfull"
+   echo "error: GIT installtion failed"
+   exit 1
 else
-   echo "GIT installtion failed"
+   echo "Git Installtion successfull!!"
 fi
