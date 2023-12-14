@@ -11,3 +11,10 @@ else
 fi
 
 yum installfff git -y
+
+if [ $? -ne 0 ]
+ then
+  echo "Error: The git installation not success"
+else 
+echo "The git installation success"
+fi
