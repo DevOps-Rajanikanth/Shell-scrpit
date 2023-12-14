@@ -10,3 +10,5 @@ echo "Toatal is : $SUM"
 echo "How many arument pass: $# "
 
 echo "All arguments pass: $@"
+
+echo "script name: $0"
