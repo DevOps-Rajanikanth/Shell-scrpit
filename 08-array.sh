@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LANGUGAGES=("java" "python")
+LANGUGAGES=("java" "python" ".net")
 
-echo "Most use languages is  : ${LANGUGAGES[0]}"
-echo "All languages : ${LANGUGAGES[1]}"
+echo "Most use language is  : ${LANGUGAGES[0]}"
+echo "Second most language : ${LANGUGAGES[1]}"
 echo "All : ${LANGUGAGES[@]}"
