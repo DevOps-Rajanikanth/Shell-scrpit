@@ -4,7 +4,7 @@ ID=$(id -u)
 
 if [ $ID -ne 0 ]
   then
-      echo "Error: Please Log with root use access"
+      echo "Error: Please Log with root useR access"
       exit 1
 else
       echo "Logging as root user"
