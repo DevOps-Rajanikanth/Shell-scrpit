@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if [ $? -ne 0 ]
+if [ $ID -ne 0 ]
   then
       echo "Error: Please Log with root use access"
       exit 1
