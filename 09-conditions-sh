@@ -3,8 +3,9 @@
 NUMBER=$1
 
 if [$NUMBER -gt 100]
-then
-echo "The number is : $NUMBER greter than 100"
+ then
+    echo "The number is : $NUMBER greter than 100"
 else
-echo "the number is : $NUMBER less than 100"
+  then 
+    echo "the number is : $NUMBER less than 100"
 fi
