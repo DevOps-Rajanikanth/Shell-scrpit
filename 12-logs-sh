@@ -4,9 +4,10 @@ ID=$(id -u)
 
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
 
-echo -e " $R script name:$G $0 $N"
+echo -e " $Y script name:$G $0 $N"
 
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
