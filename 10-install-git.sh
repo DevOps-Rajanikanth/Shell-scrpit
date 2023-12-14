@@ -20,5 +20,16 @@ if [ $? -ne 0 ]
 
 else 
    echo "The git installation success"
+fi
 
+yum install mysql -y
+
+if [ $? -ne 0 ]
+ 
+ then
+  echo "Error: The mysql installtion failed"
+  exit 1
+
+else
+ echo "The MYSQL installtion is Success!!"
 fi
