@@ -10,7 +10,7 @@ else
    echo "U are root user"
 fi
 
-yum installfff git -y
+yum install git -y
 
 if [ $? -ne 0 ]
  then
