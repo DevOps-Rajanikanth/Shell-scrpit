@@ -3,4 +3,4 @@
 LANGUGAGES=("java" "python")
 
 echo "Most use languages is  : ${LANGUGAGES[0]}"
-echo "Most use languagesis : ${@}"
+echo "Most use languagesis : ${$@}"
