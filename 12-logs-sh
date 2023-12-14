@@ -11,7 +11,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 if [ $ID -ne 0 ]
   then
-      echo -e "Error: $R Please as a  root user "
+      echo -e "Error: $R Please Login as a  root user "
       exit 1
 else
       echo -e "You are $G root $N user"
@@ -30,7 +30,7 @@ VALIDATE(){
 
 
 
-yum install mysql -y &>> $LOGFILE
+yum install mysqll -y &>> $LOGFILE
 
 VALIDATE $? "Installing Mysql"
 
