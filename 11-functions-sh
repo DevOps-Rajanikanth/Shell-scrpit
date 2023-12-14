@@ -12,20 +12,22 @@ fi
 
 VALIDATE(){
 
-  if [ $? -ne 0 ]
+  if [ $1 -ne 0 ]
     then 
-      echo "Installation  failed!!"
+      echo "$2 ....failed!!"
       exit 1
   else
-      echo "Installtion succesfull!"
+      echo " $2 ....succesfull!"
    fi
 }
 
 
 
 yum install mysql -y
-VALIDATE 
+
+VALIDATE $? "Installing Mysql"
 
 
 yum install git -y
-VALIDATE
+
+VALIDATE $? "Installing Git"
