@@ -10,4 +10,4 @@ else
    echo "U are root user"
 fi
 
-yum install git -y
+yum installfff git -y
