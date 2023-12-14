@@ -30,7 +30,7 @@ VALIDATE(){
 
 
 
-yum install mysqll -y &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE
 
 VALIDATE $? "Installing Mysql"
 
