@@ -2,34 +2,29 @@
 
 ID=$(id -u)
 
-if [ $ID -ne 0 ]
+if [ $ID -ne 0]
  then
-   echo "Error: please login  as a root user"
-    exit 1
+   echo "Error: Please login as a Root user"
+   exit 1
 else
-   echo "U are root user"
-fi
-
-yum install git -y
-
-if [ $? -ne 0 ]
-
- then
-  echo "Error: The git installation not success"
-  exit 1
-
-else 
-   echo "The git installation success"
+   echo "U are the Root user"
 fi
 
 yum install mysql -y
 
 if [ $? -ne 0 ]
- 
- then
-  echo "Error: The mysql installtion failed"
-  exit 1
-
+ then 
+   echo "Error: mysql Installtion Not Successfull!!"
+   exit 1
 else
- echo "The MYSQL installtion is Success!!"
+   echo "mysql Installion Successfully Completed!!"
+fi
+
+yum install git -y
+
+if [ $? -e 0 ]
+ then
+   echo "The installion Of GIT is Successfull"
+else
+   echo "GIT installtion failed"
 fi
