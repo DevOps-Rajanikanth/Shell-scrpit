@@ -15,6 +15,7 @@ yum install git -y
 if [ $? -ne 0 ]
  then
   echo "Error: The git installation not success"
+  exit 1
 else 
 echo "The git installation success"
 fi
