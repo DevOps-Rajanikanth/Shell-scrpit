@@ -4,9 +4,9 @@ ID=$(id -u)
 
 if [$ID -nt 0]
  then
-   echo "Error: The user is not a root user"
+   echo "Error: please login  as a root user"
 else
-   echo "Error: The user is root user"
+   echo "U are root user"
 fi
 
-yum install git
+yum install git -y
