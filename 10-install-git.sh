@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if [$ID -nt 0]
+if [ $ID -nt 0 ]
  then
    echo "Error: please login  as a root user"
 else
