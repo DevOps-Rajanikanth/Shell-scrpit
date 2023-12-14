@@ -1,0 +1,31 @@
+#!/bin/bash
+
+ID=$(id -u)
+
+if [ $? -ne 0]
+  then
+      echo "Error: Please Log with root use access"
+      exit 1
+else
+      echo "Logging as root user"
+fi
+
+yum install mysql -y
+
+if [ $? -ne 0 ]
+  then 
+      echo "Mysql installation got failed!!"
+      exit 1
+else
+    echo "Mysql installtion succesfull!1"
+fi
+
+yum install git -y
+
+if [ $? -ne 0 ]
+  then
+      echo "Error: The git is not installed" 
+      exit 1
+else
+      echo "Git is installed succesfully!!"
+fi
