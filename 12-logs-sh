@@ -26,7 +26,7 @@ VALIDATE(){
     then 
         echo "$2 ....failed!!"
   else
-        echo "T$2 .....Success!!"
+        echo "$2 .....Success!!"
   fi
 }
 
