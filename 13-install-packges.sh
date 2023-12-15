@@ -10,7 +10,7 @@ LOGFILE="/tmp/$0-TIMESTAMP.log"
 
 ID=$(id -u)
 
-if [ $ID -ne 0]
+if [ $ID -ne 0 ]
   then 
       echo -e "ERROR:$R Root user access denied $N"
 else
