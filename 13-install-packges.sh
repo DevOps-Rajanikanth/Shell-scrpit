@@ -26,7 +26,7 @@ VALIDATE(){
     fi
 }
 
-for packages $@
+for packages in $@
 do
 yum list installed $packages &>> $LOGFILE
 if [ $? -ne 0 ]
