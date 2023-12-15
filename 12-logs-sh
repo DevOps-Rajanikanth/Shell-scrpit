@@ -8,7 +8,8 @@ N="\e[0m"
 TIMESTAMP=$(date +%F-%M-%H-%S)
 LOGFILE="/tmp/$0-TIMESTAMP.log"
 
-echo -e " $Y The script name: $0"
+echo -e " $Y The script name: $G $0"
+echo -e "script started at $TIMESTAMP" &>>$LOGFILE
 ID=$(id -u)
 
 if [ $ID -ne 0 ]
@@ -16,7 +17,7 @@ if [ $ID -ne 0 ]
       echo -e "$R ERROR: root user access denied!! $N "
       exit 1
 else
-      echo -e "You are $Y Roor $Y user"
+      echo -e "You are $Y Root $N user"
 fi
 
 VALIDATE(){
@@ -29,13 +30,13 @@ VALIDATE(){
   fi
 }
 
-yum install mysql -y 
+yum install mysql -y &>> $LOGFILE
 
-VALIDATE $? "Insatalling mysql"
+VALIDATE $? "Insatalling MYSQL"
 
-yum install git -y 
+yum install git -y &>> $LOGFILE
 
-VALIDATE $? "Insatlling git"
+VALIDATE $? "Insatlling GIT"
 
 
 
