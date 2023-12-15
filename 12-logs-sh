@@ -9,7 +9,7 @@ TIMESTAMP=$(date +%F-%M-%H-%S)
 LOGFILE="/tmp/$0-TIMESTAMP.log"
 
 echo -e " $Y The script name: $G $0"
-echo -e "script started at $TIMESTAMP" &>>$LOGFILE
+echo -e "script started at $TIMESTAMP"
 ID=$(id -u)
 
 if [ $ID -ne 0 ]
