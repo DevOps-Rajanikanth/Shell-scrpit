@@ -15,4 +15,4 @@ if [ $ID -ne 0]
       echo -e "ERROR:$R Root user access denied $N"
 else
       echo -e "You are the $Y root user $N"
-
+fi
