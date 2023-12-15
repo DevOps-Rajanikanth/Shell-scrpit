@@ -16,7 +16,7 @@ if [ ID -ne 0 ]
       echo -e "$R ERROR: root user access denied!! $N "
       exit 1
 else
-      echo -e "You are $y Roor $Y user"
+      echo -e "You are $Y Roor $Y user"
 fi
 
 VALIDATE(){
