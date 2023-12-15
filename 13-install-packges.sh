@@ -36,6 +36,5 @@ if [ $? -ne 0 ]
 else
       echo "$packages already installe....skipping"
 fi
-
 done
 
