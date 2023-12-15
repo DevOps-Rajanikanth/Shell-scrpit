@@ -16,3 +16,26 @@ if [ $ID -ne 0 ]
 else
       echo -e "You are the $Y root user $N"
 fi
+
+VALIDATE(){
+    if [ $1 -ne 0 ]
+      then 
+          echo "ERROR: $2 ...failed!!"
+    else
+          echo "$2 ....successed!!"
+    fi
+}
+
+for packages $@
+do
+yum list installed $packages &>> $LOGFILE
+if [ $? -ne 0 ]
+  then
+      yum install $packages &>> $LOGFILE
+      VALIDATE $? "Installtion of $packages"
+else
+      echo "$packages already installe....skipping"
+fi
+
+done
+
