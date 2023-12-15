@@ -34,7 +34,7 @@ if [ $? -ne 0 ]
       yum install $packages &>> $LOGFILE
       VALIDATE $? "Installtion of $packages"
 else
-      echo "$packages already installe....skipping"
+      echo -e "$packages already installed.... $Y skipping $N"
 fi
 done
 
