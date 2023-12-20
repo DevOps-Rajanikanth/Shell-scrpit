@@ -1,5 +1,5 @@
 #!/bin/bash
-file=/etc/passwod
+file=/etc/passwd
 
 R="\e[31m"
 G="\e[32m"
@@ -10,6 +10,8 @@ if [ ! -f $file ] # ! denotes opposite
 then
     echo -e "$R Source directory: $file does not exists. $N"
 fi
+
+#Internal Field Separator (IFS)
 
 while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do
