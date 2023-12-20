@@ -11,7 +11,7 @@ if [ ! -d $SOURCE_DIR ]
   then
       echo -e "$R Source Directory: $SOURCE_DIR Dos not exist $N"
 fi
-FILES_TO_DELETE=$("find $SOURCE_DIR -type -mtime +14 -name *.log")
+FILES_TO_DELETE=$(find $SOURCE_DIR -type -mtime +14 -name "*.log")
 
 while IFS= read -r line
 do
