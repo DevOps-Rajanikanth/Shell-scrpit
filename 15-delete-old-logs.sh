@@ -21,3 +21,4 @@ do
     echo "deletefiles: $line"
      rm -rf $line
 done <<< $FILES_TO_DELETE
+
